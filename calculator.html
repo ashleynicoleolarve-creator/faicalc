@@ -1,0 +1,148 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Spider-Man Calculator</title>
+
+    <link rel="stylesheet" href="calculator.css">
+
+</head>
+
+<body>
+
+    <!-- BACKGROUND DECORATIONS -->
+
+    <div class="background-decor">
+
+        <span>🕷️</span>
+        <span>🕸️</span>
+        <span>🕷️</span>
+        <span>🕸️</span>
+        <span>🕷️</span>
+        <span>🕸️</span>
+        <span>🕷️</span>
+        <span>🕸️</span>
+        <span>🔴</span>
+        <span>🔵</span>
+
+    </div>
+
+
+    <!-- MAIN CALCULATOR -->
+
+    <div class="cal-box">
+
+        <div class="box">
+
+            <!-- SPIDER LOGO -->
+
+            <div class="spider-logo">
+                🕷️
+            </div>
+
+
+            <!-- TITLE -->
+
+            <h2 class="calculator-title">
+                SPIDER CALCULATOR
+            </h2>
+
+            <p class="subtitle">
+                ~ FRIENDLY NEIGHBORHOOD MATH ~
+            </p>
+
+
+            <!-- CALCULATOR DISPLAY -->
+
+            <form name="form1" action="">
+
+                <input
+                    class="inputValue"
+                    type="text"
+                    name="textview"
+                    readonly
+                    placeholder="0"
+                >
+
+            </form>
+
+
+            <!-- CALCULATOR BUTTONS -->
+
+            <section>
+
+                <div class="container">
+
+                    <button type="button" onclick="clearDisplay()">AC</button>
+
+                    <button type="button" onclick="backspace()">⌫</button>
+
+                    <button type="button" onclick="insert('%')">%</button>
+
+                    <button type="button" onclick="insert('/')">÷</button>
+
+
+                    <button type="button" onclick="insert('7')">7</button>
+
+                    <button type="button" onclick="insert('8')">8</button>
+
+                    <button type="button" onclick="insert('9')">9</button>
+
+                    <button type="button" onclick="insert('*')">×</button>
+
+
+                    <button type="button" onclick="insert('4')">4</button>
+
+                    <button type="button" onclick="insert('5')">5</button>
+
+                    <button type="button" onclick="insert('6')">6</button>
+
+                    <button type="button" onclick="insert('-')">−</button>
+
+
+                    <button type="button" onclick="insert('1')">1</button>
+
+                    <button type="button" onclick="insert('2')">2</button>
+
+                    <button type="button" onclick="insert('3')">3</button>
+
+                    <button type="button" onclick="insert('+')">+</button>
+
+
+                    <button type="button"
+                        class="btnzero"
+                        onclick="insert('0')">0</button>
+
+                    <button type="button" onclick="insert('.')">.</button>
+
+                    <button type="button"
+                        class="btnequal"
+                        onclick="equal()">=</button>
+
+                </div>
+
+            </section>
+
+
+            <!-- FOOTER -->
+
+            <p class="footer-text">
+                🕷️ WITH GREAT POWER COMES GREAT MATH 🕷️
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <!-- JAVASCRIPT -->
+
+    <script src="calcu.js"></script>
+
+</body>
+
+</html>
